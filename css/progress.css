@@ -1,0 +1,125 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.ccontainer{
+    display: flex;
+    border-radius: 8px;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.circular-progress{
+    position: relative;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circ-prog1 {
+    background: conic-gradient(#0000FF 3.6deg, #ededed 0deg);
+
+}
+#circ-prog2 {
+    background: conic-gradient(#FFA500 3.6deg, #ededed 0deg);
+
+}
+#circ-prog3 {
+    background: conic-gradient(#00FFFF 3.6deg, #ededed 0deg);
+
+}
+
+
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#prog-val1{
+    color: #0000FF;
+}
+
+#prog-val2{
+    color: #FFA500;
+}
+
+#prog-val3{
+    color: #00FFFF;
+}
+
+.text{
+    font-size: 30px;
+    font-weight: 500;
+    color: #606060;
+}
+
+.h300 {
+    height: 280px;
+}
+
+.h12 ´{
+    height: 12px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.circle-p {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.fp {
+    font-size: 10px;
+}
+
+.card > * {
+    color:#606060;
+}
+
+#header {
+    height: 100px;
+    margin-top: 10px;
+}
+
+#foto { 
+    height: 90px;
+    border-radius: 50% 50% 10% 50%;
+}
+
+#fotop {
+    border-radius: 10% 50% 10% 50%;
+    border: solid;
+    border-color: #00FFFF;
+    border-width: 5px;
+}
+
+#enlace:hover {
+    color: #FFA500;
+    opacity: 50;
+}
+
+.flag {
+    height: 12px;
+}
+
+#pinkcirc {
+    background-color: rgb(226, 121, 201);
+}
