@@ -1,7 +1,7 @@
 // Declarar una función para cargar el archivo JSON.
 async function loadJSON() {
   
-  const data = await fetch('./data/data.json').then((res) => res.json());
+  const data = await fetch('../data/data.json').then((res) => res.json());
   return data.influcard;
 }
 
