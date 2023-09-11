@@ -10,7 +10,7 @@ const renderData = (datos) => {
         <a id="enlace" href="/html/mosaico.html"><img src="${datos.account_picture}" class="img-fluid" id="fotop"></a>
         <div><i class="${datos.rss_icon} text-danger"></i> ${datos.username}</div>
         <div>${datos.gender == 1 ? "Mujer" : "Hombre" }, ${datos.age} años</div>
-        <div><img src="/assets/flags/4x3/ES.svg" class="flag"> ${datos.country}</div>
+        <div><img src="/assets/flags/4x3/es.svg" class="flag"> ${datos.country}</div>
         <div class="text-truncate">programación música peliculas</div>
       </div>
       <div class="col-md-7 col-sm-7">
