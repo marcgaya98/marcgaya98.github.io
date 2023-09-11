@@ -7,10 +7,10 @@ const renderData = (datos) => {
     div.innerHTML = `
     <div class="row">
       <div class="col-md-5 col-sm-5 text-center">
-        <a id="enlace" href="/about"><img src="${datos.account_picture}" class="img-fluid" id="fotop"></a>
+        <a id="enlace" href="/html/mosaico.html"><img src="${datos.account_picture}" class="img-fluid" id="fotop"></a>
         <div><i class="${datos.rss_icon} text-danger"></i> ${datos.username}</div>
         <div>${datos.gender == 1 ? "Mujer" : "Hombre" }, ${datos.age} años</div>
-        <div><img src="./assets/flags/4x3/ES.svg" class="flag"> ${datos.country}</div>
+        <div><img src="/assets/flags/4x3/ES.svg" class="flag"> ${datos.country}</div>
         <div class="text-truncate">programación música peliculas</div>
       </div>
       <div class="col-md-7 col-sm-7">
@@ -62,7 +62,7 @@ const renderHeader = (datos) => {
           <div class="vstack ms-3">
             <div class="display-6">${datos.name}</div>
             <div><i class="${datos.rss_icon} text-danger"></i> ${datos.username}</div>
-            <div><img src="./assets/flags/4x3/ES.svg" class="flag"> ${datos.country} - <i class="fas ${datos.gender == 1 ? "fa-venus text-danger" : "text-mars bg-primary"}"></i> ${datos.age} años</div>
+            <div><img src="/assets/flags/4x3/ES.svg" class="flag"> ${datos.country} - <i class="fas ${datos.gender == 1 ? "fa-venus text-danger" : "text-mars bg-primary"}"></i> ${datos.age} años</div>
           </div>
 
         </div>
@@ -86,7 +86,7 @@ const renderHeader = (datos) => {
             </div>
           </div>
           <div class="vstack ccontainer">
-            <div class="text-center text-info">Resonacne</div>
+            <div class="text-center text-info">Resonance</div>
             <div class="circular-progress"  id="circ-prog3">
               <span class="progress-value" id="prog-val3">0%</span>
             </div>
@@ -269,8 +269,6 @@ chartGender(datos);
 }
 
 const renderPublicaciones = (datos) => {
-
-  console.log(datos);
 
   let div = document.getElementById("publicaiones");
 
@@ -727,24 +725,15 @@ am5.ready(function() {
   var data = [
     {
       name: "Noche",
-      steps: 45688,
-      pictureSettings: {
-        src: "https://www.amcharts.com/wp-content/uploads/2019/04/monica.jpg"
-      }
+      steps: 45688
     },
     {
       name: "Tarde",
-      steps: 35781,
-      pictureSettings: {
-        src: "https://www.amcharts.com/wp-content/uploads/2019/04/joey.jpg"
-      }
+      steps: 35781
     },
     {
       name: "Mañana",
-      steps: 25464,
-      pictureSettings: {
-        src: "https://www.amcharts.com/wp-content/uploads/2019/04/ross.jpg"
-      }
+      steps: 25464
     }
   ];
   
@@ -1021,8 +1010,6 @@ series.columns.template.adapters.add("fill", function(fill, target) {
 series.columns.template.adapters.add("stroke", function(stroke, target) {
   return chart.get("colors").getIndex(series.columns.indexOf(target));
 });
-
-console.log(Number(datos.post_week_day[0].engrate));
 
 // Set data
 var data = [{
