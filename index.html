@@ -13,39 +13,50 @@
     <div id="root">
         <div id="main-page">
 
+    
+          <div class="container pt-5">      
+      
+            <div class="row">
+      
+              <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                  <div id="profile" class="card-body">                   
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-6">
+                <div class="card">
+                </div>
+              </div>
+            </div>    
+        </div>
         </div>
     </div>
 
     <script src="./js/prova.js"></script>
-    <script src="./js/router.js"></script>
     <script src="./data/data.js"></script>    
     
     <script type="module">
       const data = await loadJSON();
-
-      console.log(data);
-
       const profile = getProf(data); 
-      const header = getHeader(data); 
-      const audiencia = getAudiencia(data);
-      const desempenyo = getDesempenyo(data);
-      const publicaciones = getPublicaciones(data);
-      console.log(audiencia);
-
       renderData(profile);
-      renderHeader(header);
-      renderAudiencia(audiencia);
-      renderPublicaciones(publicaciones);
-      renderDesempenyo(desempenyo);
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/locales/de_DE.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/germanyLow.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/fonts/notosans-sc.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
   </body>
 </html>
