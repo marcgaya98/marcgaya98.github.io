@@ -62,7 +62,7 @@ const renderHeader = (datos) => {
           <div class="vstack ms-3">
             <div class="display-6">${datos.name}</div>
             <div><i class="${datos.rss_icon} text-danger"></i> ${datos.username}</div>
-            <div><img src="/assets/flags/4x3/ES.svg" class="flag"> ${datos.country} - <i class="fas ${datos.gender == 1 ? "fa-venus text-danger" : "text-mars bg-primary"}"></i> ${datos.age} años</div>
+            <div><img src="/assets/flags/4x3/es.svg" class="flag"> ${datos.country} - <i class="fas ${datos.gender == 1 ? "fa-venus text-danger" : "text-mars bg-primary"}"></i> ${datos.age} años</div>
           </div>
 
         </div>
